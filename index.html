@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WANTED</title>
+	<link rel="stylesheet" href="color.css"/>
+</head>s
+
+<body background="color:red">
+<div>
+	<h1 align="center">MOST WANTED PLAYBOY</h1>
+	<p align="center"><img src ="D:\RAJ\OOTY_TRIP/IMG_8427.jpg" alt="rajkumar image" style="max-width:300px"/></p>
+	<p>Name: Mohana karthi</p>
+	<p align="center">Age: 23</p>
+	<p align="center">skintone:white </p>
+	<input type="text" id="a">
+	<input type="text" id="b">
+	<button id="bt" onclick="add()">add</button>
+    <button id="bl" onclick="sub()">sub</button>
+      <button id="br" onclick="multi()">multi</button>
+      <button id="bm" onclick="div()">div</button>
+	<p id="disc"></p>
+	<p id="sub"></p>
+	<p id="multi"></p>
+    <p id="div"></p>
+ 		<p id="mod"></p>
+	<script type="text/javascript">
+		function add()
+		{
+		var a= document.getElementById('a').value
+		var b= document.getElementById('b').value
+document.getElementById('disc').innerHTML=parseInt(a)+parseInt(b)
+}
+function sub()
+		{
+		var a= document.getElementById('a').value
+		var b= document.getElementById('b').value
+document.getElementById('sub').innerHTML=parseInt(a)-parseInt(b)
+}
+function multi()
+		{
+		var a= document.getElementById('a').value
+		var b= document.getElementById('b').value
+document.getElementById('multi').innerHTML=parseInt(a)*parseInt(b)
+}
+function div()
+		{
+		var a= document.getElementById('a').value
+		var b= document.getElementById('b').value
+document.getElementById('div').innerHTML=parseInt(a)/parseInt(b)
+}
+function Mod()
+		{
+		var a= document.getElementById('a').value
+		var b= document.getElementById('b').value
+document.getElementById('mod').innerHTML=parseInt(a)/parseInt(b)
+}
+	</script>
+	</div>	
+</body>
+</html>
